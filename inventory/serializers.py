@@ -6,4 +6,4 @@ class InventorySerializer(serializers.ModelSerializer):
     class Meta:
         model = Inventory
         fields = "__all__"
-        # TODO make only count and status editable, the rest readonly
+        read_only_fields = ["id", "name"]  # Only count and status can be edited

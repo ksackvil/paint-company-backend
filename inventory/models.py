@@ -18,6 +18,3 @@ class Inventory(models.Model):
         ],
     )
     status = models.IntegerField(choices=Status.choices, default=Status.OUT_OF_STOCK)
-
-    def __str__(self):
-        return f"{self.name}"

@@ -35,7 +35,7 @@ def update_user_role(request, id) -> Response:
 
     serializer = UserSerializer(user, data=request.data, partial=True)
     if not serializer.is_valid():
-        # Request.data is invalid
+        # request.data is invalid
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
     serializer.save()

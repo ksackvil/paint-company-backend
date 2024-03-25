@@ -20,6 +20,7 @@ def list_inventory(request) -> Response:
 def update_inventory_item(request, id) -> Response:
     item = get_object_or_404(Inventory, id=id)
 
+    # Attempt to partially update given item
     serializer = InventorySerializer(item, data=request.data, partial=True)
     if not serializer.is_valid():
         # request.data is invalid

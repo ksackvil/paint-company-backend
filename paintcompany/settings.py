@@ -86,7 +86,7 @@ WSGI_APPLICATION = "paintcompany.wsgi.application"
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
-# Uncomment for local testing
+# Uncomment for local testing with SQLite
 # DATABASES = {
 #     "default": {
 #         "ENGINE": "django.db.backends.sqlite3",

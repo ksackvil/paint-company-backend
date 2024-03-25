@@ -3,9 +3,7 @@ from .models import User
 
 
 class IsAuthenticatedAdmin(permissions.BasePermission):
-    """
-    Custom permission to only allow authenticated owners to access the view.
-    """
+    """Only allow authenticated users that are admins to access the view"""
 
     def has_permission(self, request, view) -> bool:
         user = request.user
