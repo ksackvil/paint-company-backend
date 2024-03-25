@@ -31,7 +31,11 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get("DEBUG", False)
 
-ALLOWED_HOSTS = ["paint-company-backend-8a4292c46a02.herokuapp.com"]
+ALLOWED_HOSTS = [
+    "paint-company-backend-8a4292c46a02.herokuapp.com",
+    "127.0.0.1",
+    "localhost",
+]
 
 
 # Application definition
